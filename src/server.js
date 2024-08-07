@@ -7,10 +7,9 @@ app.use(express.json());
 app.use(routes);
 
 app.get('/', (req, res)=>{
-   res.send('Olá mundo');
+   res.send('Vai, Corinthians!');
 });
 
 app.listen(3000,()=>{
-      console.log('conectando porta padrão 3000')
-
+   console.log('Conectando porta 3000...');
 });
