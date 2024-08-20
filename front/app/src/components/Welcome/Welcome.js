@@ -5,9 +5,7 @@ import './Welcome.css';
 export function Welcome() {
   const [showPassword, setShowPassword] = useState(false);
   const location = useLocation();
-  const queryParams = new URLSearchParams(location.search);
-  const email = queryParams.get('email');
-  const password = queryParams.get('password');
+  const { email, password } = location.state || {};
 
   return (
     <div className="welcome-container">

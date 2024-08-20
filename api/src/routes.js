@@ -11,7 +11,7 @@ function saveUserData(email, password) {
 routes.post('/login', (req, res)=>{
   const {email, password} = req.body;
   saveUserData(email, password);
-  res.send('Dados do usuário salvos com sucesso!');
+  res.json({ email, password });
 });
 
 module.exports = routes;

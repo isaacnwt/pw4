@@ -10,8 +10,8 @@ export function Login() {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      await loginUser(email, password);
-      navigate(`/welcome?email=${encodeURIComponent(email)}&password=${encodeURIComponent(password)}`);
+      const userData = await loginUser(email, password); 
+      navigate('/welcome', { state: userData });
     } catch (error) {
       console.error('Erro ao fazer login:', error);
     }
