@@ -10,6 +10,6 @@ app.get('/', (req, res)=>{
    res.send('Vai, Corinthians!');
 });
 
-app.listen(3000,()=>{
-   console.log('Conectando porta 3000...');
+app.listen(8080,()=>{
+   console.log('Conectando porta 8080...');
 });
