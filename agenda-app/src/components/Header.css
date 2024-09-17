@@ -1,0 +1,18 @@
+.header {
+    background-color: #282c34;
+    color: white;
+    padding: 1em 0;
+    position: relative;
+    width: 100%;
+  }
+  
+  .header-container {
+    margin-left: 20px; 
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 2em;
+    margin: 0;
+  }
+  
